@@ -1,6 +1,7 @@
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #c9d6e3);
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,46 +10,73 @@ body {
     height: 100vh;
 }
 
+/* Container Styles */
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
 }
 
+/* Header Styles */
 h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
     text-align: center;
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
 }
 
+/* Label Styles */
 label {
-    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
 }
 
+/* Input Styles */
 input {
-    margin-bottom: 16px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
+    margin-bottom: 18px;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button Styles */
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
+/* Button Hover and Active Styles */
 button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
+button:active {
+    transform: scale(0.98);
+}
+
+/* Response Section Styles */
 #postResponse, #getResponse {
     margin-top: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
 }
